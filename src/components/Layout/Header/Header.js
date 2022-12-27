@@ -5,7 +5,8 @@ import Container from "@mui/material/Container";
 
 const Header = () => {
   const { pathname } = useLocation();
-  const base = `${pathname.slice(1).split("/").shift()}`;
+  const base = `${pathname.slice(1).split("/").shift()}` || 'currency-converter';
+  console.log(base);
 
   const menuItems = [
     { url: "currency-converter", label: "Currency Converter" },

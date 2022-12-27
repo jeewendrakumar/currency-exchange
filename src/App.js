@@ -47,9 +47,9 @@ function App() {
         <Header />
         <Container maxWidth="lg">
           <Routes>
+            <Route path='/currency-converter' element={<CurrencyConverter />} />
+            <Route path='/conversion-history' element={<ConversionHistory />} />
             <Route path="/" element={<CurrencyConverter />} />
-            <Route path="/currency-converter" element={<CurrencyConverter />} />
-            <Route path="conversion-history" element={<ConversionHistory />} />
           </Routes>
         </Container>
       </CurrencyContext.Provider>
