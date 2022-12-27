@@ -49,7 +49,7 @@ function App() {
           <Routes>
             <Route path='/currency-converter' element={<CurrencyConverter />} />
             <Route path='/conversion-history' element={<ConversionHistory />} />
-            <Route path="/" element={<CurrencyConverter />} />
+            <Route path="" element={<CurrencyConverter />} />
           </Routes>
         </Container>
       </CurrencyContext.Provider>
